@@ -42,25 +42,12 @@ const Exam = props => {
             let newQuests = []
             let quests = data.map((q, k) => {
                 // console.log('key',k);
-                let newAnswers = [];
                 let answers = JSON.parse(q.answers).data.map(a => {
                     a.checked = false;
                     return a;
                 });
-                const randomAnswers = () => {
-                    let randomIndex = Math.floor(Math.random() * answers.length);
-                    let aAnswer = answers[randomIndex];
-                    aAnswer.id = `${newAnswers.length + 1}`;
-                    newAnswers.push(aAnswer);
-                    answers.splice(randomIndex, 1);
-                    if (answers.length > 0) {
-                        randomAnswers();
-                    }
-                };
 
-                randomAnswers();
-
-                q.answers = newAnswers;
+                q.answers = answers;
                 return q;
             });
 
