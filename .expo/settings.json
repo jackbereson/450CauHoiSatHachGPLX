@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "nn-29z",
+  "hostType": "tunnel",
+  "lanType": "ip",
+  "dev": false,
+  "minify": true,
+  "https": false
+}
