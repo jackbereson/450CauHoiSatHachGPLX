@@ -3,7 +3,7 @@ import styled from "styled-components";
 import AutoHeightImage from 'react-native-auto-height-image';
 import AnswersList from './AnswersList';
 import TrueAnswersList from './TrueAnswersList';
-import { questPic } from './../../../assets/quests/index';
+import { questPic } from '../../../services/imgLinks';
 
 const QuestionsList = props => {
     const { questions, checkAnswer, trueAnswersDisplay } = props;
@@ -23,7 +23,7 @@ const QuestionsList = props => {
                     <Question>
                         {content}
                     </Question>
-                    <AutoHeightImage width={320} source={pic} />
+                    <AutoHeightImage width={320} source={{uri: pic}} />
                 </>
             );
         }

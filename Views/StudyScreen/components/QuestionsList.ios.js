@@ -4,7 +4,7 @@ import styled from "styled-components";
 import AutoHeightImage from "react-native-auto-height-image";
 import AnswerOptions from "./AnswerOptions";
 import ManualAnswerOptions from "./ManualAnswerOptions";
-import { questPic } from "./../../../assets/quests/index";
+import { questPic } from "../../../services/imgLinks";
 
 class QuestionsList extends PureComponent {
   render() {
@@ -22,7 +22,7 @@ class QuestionsList extends PureComponent {
             questionHtml = (
               <>
                 <Question>{content}</Question>
-                <AutoHeightImage width={380} source={pic} />
+                <AutoHeightImage width={380} source={{uri: pic}} />
               </>
             );
           }
