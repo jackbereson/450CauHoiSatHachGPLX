@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PureComponent }  from "react";
 import { FlatList } from "react-native";
 import styled from "styled-components";
 import AutoHeightImage from "react-native-auto-height-image";
