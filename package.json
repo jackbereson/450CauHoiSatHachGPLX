@@ -14,7 +14,7 @@
     "expo-ads-admob": "~6.0.0",
     "expo-file-system": "~6.0.0",
     "expo-sqlite": "~6.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-loadable": "^5.5.0",
