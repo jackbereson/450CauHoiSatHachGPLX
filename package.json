@@ -10,7 +10,7 @@
     "b-ios": "expo build:ios"
   },
   "dependencies": {
-    "expo": "^34.0.1",
+    "expo": "^48.0.0",
     "expo-ads-admob": "~6.0.0",
     "expo-file-system": "~6.0.0",
     "expo-sqlite": "~6.0.0",
